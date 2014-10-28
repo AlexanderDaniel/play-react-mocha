@@ -2,8 +2,10 @@
 
 Testing the React component with [sbt-mocha](https://github.com/sbt/sbt-mocha).
 
-There is still one issue when sbt-mocha downloads and installs the [jsdom](https://github.com/tmpvar/jsdom)
-Node dependency from [package.json](package.json) ([Details](https://github.com/sbt/sbt-mocha/issues/4)).
+There are still issues when sbt-mocha downloads and installs the [jsdom](https://github.com/tmpvar/jsdom):
+
+- [Problem with npm dependency resolution](https://github.com/sbt/sbt-js-engine/issues/20)
+- [npm dependency resolution issue with sbt-web](https://github.com/playframework/playframework/issues/3565)
 
 Run the application with `sbt run`.
 

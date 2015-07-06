@@ -4,13 +4,14 @@ version := "1.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala, SbtWeb)
 
-scalaVersion := "2.11.1"
+scalaVersion := "2.11.6"
 
 JsEngineKeys.engineType := JsEngineKeys.EngineType.Node
 
 libraryDependencies ++= Seq(
-  "org.webjars"                 %% "webjars-play"                   % "2.3.0-2",
-  "org.webjars"                  % "react"                          % "0.11.2"
+  "org.webjars"                 %% "webjars-play"                   % "2.4.0-1",
+  "org.webjars"                  % "react"                          % "0.13.3",
+  "org.webjars"                  % "requirejs-node"                 % "2.1.18"
 )
 
 MochaKeys.requires += "Setup"

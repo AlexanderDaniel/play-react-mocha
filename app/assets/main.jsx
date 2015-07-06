@@ -2,7 +2,7 @@
 
 require(['CheckboxWithLabel', 'react'], function (CheckboxWithLabel, React) {
 
-    React.renderComponent(
+    React.render(
         <CheckboxWithLabel labelOn="On" labelOff="Off" />,
         document.getElementById('reactContainer')
     );
